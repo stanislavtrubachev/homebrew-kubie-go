@@ -5,13 +5,13 @@
 class KubieGo < Formula
   desc "Kubernetes context and namespace manager written in Go"
   homepage "https://github.com/stanislavtrubachev/kubie-go"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stanislavtrubachev/kubie-go/releases/download/v0.1.1/kubie-go_0.1.1_darwin_amd64.tar.gz"
-      sha256 "230bbed7be6e54f2d15f74d2c812866642b7a848edda4dda8dcfd6a4277e1988"
+      url "https://github.com/stanislavtrubachev/kubie-go/releases/download/v0.1.2/kubie-go_0.1.2_darwin_amd64.tar.gz"
+      sha256 "c26160a1edc174ab42b94d41e5e25aa4355269715b63e784928614be223b62be"
 
       define_method(:install) do
         bin.install "kubie-go"
@@ -22,8 +22,8 @@ class KubieGo < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stanislavtrubachev/kubie-go/releases/download/v0.1.1/kubie-go_0.1.1_darwin_arm64.tar.gz"
-      sha256 "568b04abd41cb682374fcf13b366066ba0ed8171af370957c54642bb77f780d3"
+      url "https://github.com/stanislavtrubachev/kubie-go/releases/download/v0.1.2/kubie-go_0.1.2_darwin_arm64.tar.gz"
+      sha256 "39d133f57dbc8a0dd46f806648d734590867d3a6ef3c503edf30ced1645df41d"
 
       define_method(:install) do
         bin.install "kubie-go"
@@ -37,8 +37,8 @@ class KubieGo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stanislavtrubachev/kubie-go/releases/download/v0.1.1/kubie-go_0.1.1_linux_amd64.tar.gz"
-      sha256 "58bcf81425739b1d25a480fcb97c8d25856f289ee71bcf86792b4a90a3f1c611"
+      url "https://github.com/stanislavtrubachev/kubie-go/releases/download/v0.1.2/kubie-go_0.1.2_linux_amd64.tar.gz"
+      sha256 "81b6180ae3e7f8b8803dfd2e5cebf11ea75f4ff8838b0cd2fe579fc58ab3afcf"
       define_method(:install) do
         bin.install "kubie-go"
         bin.install_symlink bin/"kubie-go" => "kubie"
@@ -48,8 +48,8 @@ class KubieGo < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stanislavtrubachev/kubie-go/releases/download/v0.1.1/kubie-go_0.1.1_linux_arm64.tar.gz"
-      sha256 "7a00f93beac227d3b30b2bd272025cd3c62b9009220440d919bac435df697ba5"
+      url "https://github.com/stanislavtrubachev/kubie-go/releases/download/v0.1.2/kubie-go_0.1.2_linux_arm64.tar.gz"
+      sha256 "5368d48b069a2c79ce97e4ae90f5a57cd148ee22e6598f1a9f464d54592ebf2a"
       define_method(:install) do
         bin.install "kubie-go"
         bin.install_symlink bin/"kubie-go" => "kubie"
