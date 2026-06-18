@@ -6,11 +6,11 @@ class KubieGo < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/stanislavtrubachev/kubie-go/releases/download/v0.1.0/kubie-go_0.1.2_darwin_arm64.tar.gz"
+      url "https://github.com/stanislavtrubachev/kubie-go/releases/download/v0.1.2/kubie-go_0.1.2_darwin_arm64.tar.gz"
       sha256 "39d133f57dbc8a0dd46f806648d734590867d3a6ef3c503edf30ced1645df41d"
     end
     on_intel do
-      url "https://github.com/stanislavtrubachev/kubie-go/releases/download/v0.1.0/kubie-go_0.1.2_darwin_amd64.tar.gz"
+      url "https://github.com/stanislavtrubachev/kubie-go/releases/download/v0.1.2/kubie-go_0.1.2_darwin_amd64.tar.gz"
       sha256 "c26160a1edc174ab42b94d41e5e25aa4355269715b63e784928614be223b62be"
     end
   end
