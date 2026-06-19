@@ -11,7 +11,7 @@ class KubieGo < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/stanislavtrubachev/kubie-go/releases/download/v0.1.3/kubie-go_0.1.3_darwin_amd64.tar.gz"
-      sha256 "25654e0897d50b0cb34230734b0f60c69b168e522c61d2f31cca884e9f0eb0be"
+      sha256 "bcd68f178eeabc370db946a8135870f641bd677f5e3300eee950a45f6f3781fd"
 
       define_method(:install) do
         bin.install "kubie-go"
@@ -23,7 +23,7 @@ class KubieGo < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/stanislavtrubachev/kubie-go/releases/download/v0.1.3/kubie-go_0.1.3_darwin_arm64.tar.gz"
-      sha256 "f95346c949d38e1ed780008eb0a1ced163bb81b62b2ac89801692f6f88db67c9"
+      sha256 "2fb5d8d3509f5c0408c0207960821a2d86d8459da9651eecd1e2a24b9b1140c9"
 
       define_method(:install) do
         bin.install "kubie-go"
@@ -38,7 +38,7 @@ class KubieGo < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/stanislavtrubachev/kubie-go/releases/download/v0.1.3/kubie-go_0.1.3_linux_amd64.tar.gz"
-      sha256 "cdf546687c7172d056383b2112dd6e95e7c87a04617181ca42131198302148f1"
+      sha256 "d040a67823ea70dfcb5463ee85135a410854f18e88173c17e9a43f48b44905cd"
       define_method(:install) do
         bin.install "kubie-go"
         bin.install_symlink bin/"kubie-go" => "kubie"
@@ -49,7 +49,7 @@ class KubieGo < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/stanislavtrubachev/kubie-go/releases/download/v0.1.3/kubie-go_0.1.3_linux_arm64.tar.gz"
-      sha256 "f29c395766cba484898aebe25e153195b40d3bc5b4e5a4d5284c35bf2e6384f6"
+      sha256 "25d4eadfd7611091504d7b966436c28ca6c2b1838473b5cfca7cfecd6fc4e940"
       define_method(:install) do
         bin.install "kubie-go"
         bin.install_symlink bin/"kubie-go" => "kubie"
