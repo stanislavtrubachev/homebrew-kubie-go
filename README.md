@@ -1,6 +1,6 @@
 # Homebrew Kubie-Go
 
-[!License: ZLib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)
+[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)
 
 This is a Homebrew tap for installing [**kubie-go**](https://github.com/stanislavtrubachev/kubie-go).
 
